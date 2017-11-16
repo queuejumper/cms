@@ -1,0 +1,40 @@
+<?php
+
+return [
+	'signup' => '/user/signup',
+	'login' => '/user/login',
+	'thank-you' => '/user/thank-you',
+	'logout' => '/user/logout',
+	'like-action' => '/like/like-action',
+	'/' => '/post/post/index',
+	'index' => '/post/post/index',
+	'post/<id:\d+>' => '/post/post/view',
+	'dashboard' => '/dashboard/dashboard/overview',
+	'overview' => '/dashboard/dashboard/overview',
+	'profile' => '/dashboard/dashboard/profile',
+	'my-posts' => '/dashboard/dashboard/my-posts',
+	'create' => '/post/post/create',
+	'pendding' => '/dashboard/dashboard/pendding',
+	'uploaded' => '/dashboard/dashboard/uploaded',
+	'website-overview' => '/dashboard/dashboard/website-overview',
+	'my-post-action' => '/dashboard/dashboard/my-post-action',
+	'profile-action' => '/dashboard/dashboard/profile-action',
+	'more-related' => '/post/post/more-related',
+	'suggestions/search' => '/search/search/search-hint',
+	'search/<search-key:.*>' => '/search/search/search',
+	'site-overview' => '/admin/admin/site-overview',
+	'users' => '/admin/admin/users',
+	'user-action' => '/admin/admin/user-action',
+	'post-action' => '/admin/admin/post-action',
+	'posts' => '/admin/admin/posts',
+	'get-notification' => '/notification/get-notification',
+	'change-notification' => '/notification/change-notification',
+	'comment-action' => '/comment/comment/comment-action',
+	'report-action' => '/report/report-action',
+	'<controller:\w+>/<id:\d+>' => '<controller>/view',
+	'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+	'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+	
+
+
+];
