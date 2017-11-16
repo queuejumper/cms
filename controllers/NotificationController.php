@@ -29,8 +29,8 @@ class NotificationController extends \yii\web\Controller
 		    			case 'more-notifications':
 	    				self::$limit = ($limit = $request->get('limit')) ? $limit : self::$limit;
 	    				self::$offset = ($offset = $request->get('offset')) ? $offset : self::$offset;
-				    		$notifications = Notification::findNotifications()
-
+				    		$notifications = Notification::findNotifications();
+				    		
 				    		foreach ($notifications as $key => $value) 
 				    		{
 								$notifications[$key]->created_at = Helper::dateFrom($value->created_at);

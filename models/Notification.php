@@ -61,15 +61,5 @@ class Notification extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
-    public function ()
-    {
-        
-    }
 
 }
-find()
-                                                        ->where(['user_id' => $current_user])
-                                                        ->offset(self::$offset)
-                                                        ->limit(self::$limit)
-                                                        ->orderBy(['seen' => 0,'created_at' => SORT_DESC])
-                                                        ->all();
